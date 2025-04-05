@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Base and Header Styles -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/section.css' %}">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet" />
+
+    <title>117 Portfolio - Jose A Torres</title>
+</head>
+
+<body>
+
+    <!-- Responsive Header -->
+    <header class="site-header">
+        <div class="header-left-side">
+            <a href="{% url 'home' %}">
+                <h2>Jose A Torres</h2>
+            </a>
+        </div>
+
+        <input type="checkbox" id="nav-check" />
+        <label for="nav-check" class="nav-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="header-right-side">
+            <div class="nav-options">
+                <a href="{% url 'about' %}">About Me</a>
+                <a href="{% url 'projects_list' %}">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="{% url 'contact' %}">Contact Me</a>
+            </div>
+        </nav>
+    </header>
+
+    {% block content %}
+
+    {% endblock %}
+
+</body>
+
+</html>

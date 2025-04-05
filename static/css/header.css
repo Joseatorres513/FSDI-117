@@ -1,0 +1,60 @@
+header {
+    background-color: var(--header-orange);
+    height: 60px;
+    position: sticky;
+    top: 0px;
+
+    padding: 1rem 2rem;
+    color: var(--text-light);
+    justify-content: center;
+    display: flex;
+
+}
+
+/* Left Side */
+.header-left-side {
+    width: 40%;
+
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+/* Right Side */
+.header-right-side {
+    width: 70%;
+    color: var(--text-light);
+    margin: 0;
+}
+
+.header-right-side .nav-options a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: bold;
+}
+
+.nav-options a {
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 2%;
+    padding: 1% 2%;
+}
+
+.nav-options a:hover {
+    border-bottom: solid 2px white;
+}
+
+/*Ham Button*/
+.nav-btn span {
+    width: 30px;
+    background-color: white;
+    height: 3px;
+    margin: 6px auto;
+    display: block;
+}
+
+#nav-check, .nav-btn {
+    display: none;
+}

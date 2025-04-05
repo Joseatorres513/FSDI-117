@@ -1,0 +1,257 @@
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.homepage-background {
+    background-image: url('/static/img/spalding.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    /* Reduced from 100vh */
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    /* dark overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+.overlay h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 6px black;
+}
+
+.overlay p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 3px black;
+}
+
+.cta-button {
+    background-color: #ff4c60;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.cta-button:hover {
+    background-color: #e04356;
+    transform: scale(1.05);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+:root {
+    --primary-color: #000000;
+    --background-color: #A6A5AD;
+    --header-orange: #e64a20;
+    --text-light: #ffffff;
+    --lobster-font: "Lobster Two", sans-serif;
+    --DM-font: "DM Sans", sans-serif;
+}
+
+html {
+    font-size: 16px;
+    background-color: var(--background-color);
+    font-family: var(--DM-font);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    /* improved box sizing */
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    color: var(--text-light);
+    font-family: var(--lobster-font);
+    font-size: 1.7rem;
+}
+
+.center-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.about-left {
+    align-self: flex-start;
+}
+
+.about-left img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about-right {
+    flex: 1;
+    text-align: center;
+}
+
+.about-text h2 {
+    color: var(--header-orange);
+    font-family: var(--DM-font);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-text .job-title {
+    color: var(--header-orange);
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.about-text p {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.skills-title {
+    color: var(--header-orange);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.skills-list {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+
+.projects-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.projects-title {
+    color: var(--header-orange);
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: white;
+    color: black;
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    height: auto;
+}
+
+.text-label {
+    background-color: var(--header-orange);
+    color: white;
+    padding: 0.3rem 0.7rem;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    margin-right: 0.5rem;
+    display: inline-block;
+}
+
+.experience-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #ffffff11;
+    /* subtle background difference */
+}
+
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.experience-item {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}

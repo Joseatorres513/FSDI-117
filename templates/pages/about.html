@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About - Jose A Torres{% endblock title %}
+
+{% block content %}
+<!-- About Me Section -->
+<section class="about-section">
+    <div class="about-container">
+
+        <!-- Left Side: Image -->
+        <div class="about-left">
+            <img src="{% static 'img/Headshot.png' %}" alt="Headshot of Jose" />
+        </div>
+
+        <!-- Right Side: Info -->
+        <div class="about-right">
+            <div class="about-text">
+                <h2>Jose A Torres</h2>
+                <h4 class="job-title">Security Analyst</h4>
+
+                <p>
+                    Junior Full Stack Developer with proven expertise in Signals Intelligence and an extension of software development throughout my military career. Disciplined and driven veteran of the United States Army holding a Top-Secret Clearance with Counter Intelligence polygraph currently working for the Under Secretary of Defense in the Pentagon.
+                </p>
+
+                <p>
+                    Seeking a dynamic opportunity with a company with proven success by contributing and developing my unique skillsets, background, and expertise.
+                </p>
+
+                <h2>Skills</h2>
+                <div class="skills-list">
+                    <button class="btn skill">HTML</button>
+                    <button class="btn skill">CSS</button>
+                    <button class="btn skill">JavaScript</button>
+                    <button class="btn skill">Python</button>
+                    <button class="btn skill">Django</button>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+{% endblock content %}

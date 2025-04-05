@@ -1,0 +1,144 @@
+/* Phone View (max-width: 640px) */
+@media (max-width: 640px) {
+    html {
+        font-size: 10px;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .header-left-side {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .header-right-side {
+        width: 100%;
+        align-items: flex-start;
+        background-color: var(--header-orange);
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .nav-options {
+        margin: 2rem 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: column;
+    }
+
+    .nav-options a {
+        background-color: var(--header-orange);
+        color: var(--text-light);
+        text-align: center;
+        padding: 1rem 0;
+        width: 100%;
+        font-weight: bold;
+        font-size: 1.1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-options a:hover {
+        background-color: #cc3e1c;
+        border-bottom: solid 2px white;
+    }
+
+    /* Hamburger Button (Toggle) */
+    .nav-btn {
+        display: block;
+        width: 28px;
+        height: 22px;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+
+    .nav-btn span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: var(--text-light);
+        border-radius: 2px;
+    }
+
+    /* Hide checkbox input */
+    #nav-check {
+        display: none;
+    }
+
+    /* Toggle logic: hide/show .header-right-side */
+    #nav-check:not(:checked) ~ .header-right-side {
+        display: none;
+    }
+
+    #nav-check:checked ~ .header-right-side {
+        display: block;
+    }
+}
+
+/* Tablet View (641px to 1007px) */
+@media (min-width: 641px) and (max-width: 1007px) {
+    html {
+        font-size: 14px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+/* Tablet & Mobile View: About Me Section */
+@media (max-width: 1007px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        display: block;
+    }
+
+    .headshot img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-text {
+        padding: 0 1rem;
+    }
+
+    .about-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-text p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .about-text h3 {
+        font-size: 1.3rem;
+    }
+
+    .about-text p {
+        font-size: 0.9rem;
+    }
+
+    .headshot img {
+        width: 400px;
+        height: 400px;
+    }
+}

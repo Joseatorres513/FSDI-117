@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Projects {% endblock title %}
+
+{% block content %}
+<section class="projects-section">
+    <h2 class="projects-title">Projects</h2>
+
+    <div class="projects-list">
+        <!-- Project 1 -->
+        <div class="project-card">
+            <a href="https://github.com/" target="_blank">
+                <img src="{% static 'img/headshot.png' %}" alt="Project Image">
+            </a>
+            <h3>Project Name</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla est repellat debitis perferendis fugit.</p>
+            <div class="skills-container">
+                <span class="text-label">Python</span>
+                <span class="text-label">Django</span>
+                <span class="text-label">Bootstrap</span>
+                <a href="https://github.com/your-project-link" target="_blank" class="cta-button">View Code</a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h3>Another Project</h3>
+            <p>A brief description of your second project. Maybe include features or tools used.</p>
+            <div class="skills-container">
+                <span class="text-label">HTML</span>
+                <span class="text-label">CSS</span>
+                <span class="text-label">JavaScript</span>
+                <a href="https://github.com/your-project-link" target="_blank" class="cta-button">View Code</a>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <h3>Third Project</h3>
+            <p>This one could be a fun experiment or small app you made to practice a skill.</p>
+            <div class="skills-container">
+                <span class="text-label">React</span>
+                <span class="text-label">API</span>
+                <a href="https://github.com/your-project-link" target="_blank" class="cta-button">View Code</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
