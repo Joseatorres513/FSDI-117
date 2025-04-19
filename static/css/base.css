@@ -13,20 +13,7 @@ p {
     text-align: justify;
 }
 
-.homepage-background {
-    background-image: url('/static/img/spalding.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 70vh;
-    /* Reduced from 100vh */
-    width: 100%;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+
 
 .overlay {
     position: absolute;
@@ -59,7 +46,7 @@ p {
 }
 
 .cta-button {
-    background-color: #ff4c60;
+    background-color: #ff6333;
     color: white;
     padding: 0.75rem 1.5rem;
     border-radius: 30px;
@@ -71,7 +58,7 @@ p {
 }
 
 .cta-button:hover {
-    background-color: #e04356;
+    background-color: #ff6333;
     transform: scale(1.05);
 }
 
@@ -255,3 +242,36 @@ h2 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: left;
 }
+
+/* Unify all buttons and links styled as buttons */
+button.skill,
+a.skill,
+a.btn.skill,
+button.btn.skill,
+.cta-button {
+    background-color: #ff6333;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-family: var(--DM-font);
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    margin: 0.3rem;
+}
+
+button.skill:hover,
+a.skill:hover,
+a.btn.skill:hover,
+button.btn.skill:hover,
+.cta-button:hover {
+    background-color: #e64a20;
+    transform: scale(1.05);
+    color: white;
+}
+

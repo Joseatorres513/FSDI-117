@@ -13,9 +13,24 @@
         <div class="about-right">
             <div class="about-text">
                 <h2>Jose A Torres</h2>
-                <h4 class="job-title">Security Analyst</h4>
-                <p>Junior Full Stack Developer with Signals Intelligence expertise...</p>
-                <p>Seeking dynamic opportunities in tech...</p>
+                <h4 class="job-title">Security & Intelligence Professional | Junior Full Stack Developer</h4>
+
+                <p>
+                    Veteran and mission-driven professional with over 10 years of combined experience in Signals Intelligence (SIGINT), personnel security, and software development.
+                    I have a proven record of supporting national defense operations while contributing technical solutions to mission-critical challenges.
+                    Trusted to handle Top Secret/SCI clearances and sensitive information, I bring a hybrid background of operational intelligence and full-stack development to the table.
+                </p>
+
+                <p>
+                    In my current role as a Security Analyst at the Pentagon with ARLO Solutions, I conduct comprehensive personnel clearance reviews, deliver SCI briefings, and manage secure systems like SharePoint and NIPRnet.
+                    I also contribute to digital operations by editing classified forms (DD2875), updating internal HTML files, and participating in security best practice discussions across agencies.
+                </p>
+
+                <p>
+                    As a former U.S. Army Signals Intelligence Analyst and Planner, I produced over 2,800 SIGINT reports and supported real-time intelligence missions globally.
+                    I developed internal tools using Python, Flask, Django, and JavaScript, built RESTful APIs, and deployed interactive SIGINT maps using Leaflet.js and Mapbox.
+                    I also trained soldiers and collaborated with multi-agency teams on secure, scalable mission technology.
+                </p>
 
                 <h2>Skills</h2>
                 <div class="skills-list">
@@ -24,11 +39,23 @@
                     <button class="btn skill">JavaScript</button>
                     <button class="btn skill">Python</button>
                     <button class="btn skill">Django</button>
+                    <button class="btn skill">Flask</button>
+                    <button class="btn skill">React</button>
+                    <button class="btn skill">VSCode</button>
+                    <button class="btn skill">Figma</button>
+                    <button class="btn skill">GitHub</button>
+                    <button class="btn skill">Ubuntu</button>
+                    <button class="btn skill">Agile</button>
+                    <button class="btn skill">Scrum</button>
+                    <button class="btn skill">Jira</button>
+                    <button class="btn skill">Confluence</button>
+                    <button class="btn skill">Trello</button>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 
 <!-- 🔗 PROJECTS PREVIEW -->
 <section id="projects" class="projects-section">
@@ -49,34 +76,51 @@
     </div>
 </section>
 
+
 <!-- 🔗 EXPERIENCE PREVIEW -->
 <section id="experience" class="experience-section">
     <h2 class="projects-title">Experience</h2>
 
     <div class="experience-timeline">
         <div class="experience-item">
-            <h3>Security Analyst - Pentagon</h3>
-            <p>Under Secretary of Defense | 2020–Present</p>
-            <p>Managed classified intelligence and contributed to military software security. Top-Secret Clearance with
-                CI Polygraph.</p>
+            <h3>Intelligence and Security Analyst – Pentagon, VA</h3>
+            <p>ARLO Solutions | September 2024 – Present</p>
+            <p>
+                Serve as a Security Analyst supporting the Office of the Under Secretary of Defense for Intelligence and Security (OUSD(I&S)). Responsibilities include conducting 
+                Top-Secret SCI clearance reviews, delivering classified briefings and indoctrinations, verifying access credentials, and managing classified documentation.
+            </p>
+            <p>
+                I routinely manage clearance validations, classified visitation requests, and updates to secure portals like SharePoint and NIPRnet. I handle personnel records with PII,
+                edit internal systems and PDF forms such as the DD2875, and contribute to internal HTML documentation — ensuring secure, accurate, and efficient workflows across government systems.
+            </p>
         </div>
 
         <div class="experience-item">
-            <h3>U.S. Army – Signals Intelligence</h3>
-            <p>2015–2020</p>
-            <p>Led secure communications and defense analysis. Gained technical skills and team leadership experience.
+            <h3>Signals Intelligence Analyst / SIGINT Planner – Fort Belvoir, VA & Fort Eisenhower, GA</h3>
+            <p>United States Army | August 2016 – September 2024</p>
+            <p>
+                Led planning and execution of SIGINT operations across joint intelligence missions supporting both tactical and strategic objectives. Delivered timely, high-value SIGINT to national-level decision makers and partner agencies.
+                Produced over 2,800 SIGINT reports and more than 100 high-priority TGRAMs in support of active mission sets.
+            </p>
+            <p>
+                Designed and implemented real-time alert systems and interactive mission maps using Python, Flask, and Django. Built RESTful APIs, integrated Mapbox and Leaflet.js for terrain analysis, and partnered with data teams to manage ingestion and formatting of raw intelligence data.
+                Trained and mentored soldiers on mission tools, technical requirements, and secure systems across multiple operations and deployments.
             </p>
         </div>
     </div>
 
-    <a href="#" class="cta-button">View Full Experience</a>
+    <a href="{% url 'experience' %}" class="btn skill">View Full Experience</a>
 </section>
 
 
 <!-- 🔗 CONTACT PREVIEW -->
 <section id="contact" class="contact-section">
     <h2 class="projects-title">Contact Me</h2>
-    <p>Email: your.email@example.com</p>
-    <a href="#" class="cta-button">Reach Out</a>
+    <p>Email: Joseatorres513@gmail.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/jose-a-torres513/" target="_blank">Jose A Torres</a></p>
+    <p>GitHub: <a href="https://github.com/Joseatorres513?tab=repositories" target="_blank">Joseatorres513</a></p>
+    <p>Phone: <a href="tel:+1-407-487-0498">+1 (407) 487-0498</a></p>
+    <p>Location: Alexandria, Virginia, DMV Area</p>
+    <a href="{% url 'contact' %}" class="btn skill">Reach Out</a>
 </section>
 {% endblock content %}

@@ -12,6 +12,9 @@ class HomePageView(TemplateView):
 class AboutPageView(TemplateView):
     template_name = "pages/about.html"
 
+class ExperiencePageView(TemplateView):
+    template_name = "pages/experience.html"
+
 # def contact_view(request):
     # form = ContactForm()
     # return render(request, "pages/contact.html", {"form": form})

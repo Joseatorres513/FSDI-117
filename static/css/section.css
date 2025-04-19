@@ -96,7 +96,7 @@
     width: 25 rem;
     display: flex
     flex-wrap: wrap;
-    padding: .5rem;
+    padding: 0.5rem;
 }
 
 .project-card: hover {
@@ -121,4 +121,132 @@ a p:nth-child(2) {
 .project-card p {
     font-size: 1rem;
     margin: 0.5rem 0;
+}
+
+.contact-section {
+    background-color: var(--header-orange);
+    color: var(--text-light);
+    padding: 4rem 2rem;
+    text-align: center;
+    max-width: 100%;
+}
+
+.contact-section h2 {
+    font-family: var(--lobster-font);
+    color: var(--text-light);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+    font-family: var(--DM-font);
+}
+
+.contact-section a {
+    color: var(--text-light);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-section a:hover {
+    color: #ffffffdd;
+    text-decoration: underline;
+}
+/* Experience page background */
+.experience-background {
+    background-color: var(--background-color); /* your site’s gray */
+}
+
+/* About layout adjustments for experience */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.about-left {
+    flex-shrink: 0;
+    width: 280px;
+    text-align: center;
+}
+
+.about-right {
+    flex: 2;
+    min-width: 300px;
+    text-align: left;
+    padding: 1rem 1.5rem;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    color: var(--header-orange);
+    font-family: var(--DM-font);
+    margin-bottom: 0.5rem;
+}
+
+.about-text .job-title {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+/* Experience content */
+.experience-list {
+    padding: 1rem 0.5rem;
+    text-align: left;
+}
+
+.experience-item {
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.experience-item h3 {
+    color: var(--header-orange);
+    font-size: 1.25rem;
+    margin-bottom: 0.3rem;
+}
+
+.experience-location {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.experience-item ul {
+    padding-left: 1.2rem;
+    list-style: disc;
+}
+
+.experience-item ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.about-left img {
+    width: 280px;
+    height: auto;
+    max-height: 400px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.about-text p {
+    text-align: left;
+    line-height: 1.7;
 }
