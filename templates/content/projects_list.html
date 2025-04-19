@@ -7,21 +7,45 @@
 <section class="projects-section">
     <h2 class="projects-title">Projects</h2>
 
+    {% if user.is_authenticated %}
+        <a href="{{project.repository}}" target="blank">
+            <img src="{{project.image}}" alt="project_image">
+
+            <p>{{project.name}}</p>
+            <p>{{project.description}}</p>
+            <p>{{project.year}}</p>
+
+            <div class="skills-container">
+                {% for skill in project.skills.all %}
+                <label class="text-label">{{ skill.name }}</label>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        </a>
     <div class="projects-list">
+
         <!-- Project 1 -->
+        {% for project in projects %}
         <div class="project-card">
-            <a href="https://github.com/" target="_blank">
-                <img src="{% static 'img/headshot.png' %}" alt="Project Image">
+            <a href="https://github.com/Joseatorres513" target="_blank">
+                <img src="{% static 'img/Imagine Greatness!.png' %}" alt="Project Image">
             </a>
             <h3>Project Name</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla est repellat debitis perferendis fugit.</p>
+            <p>Imagine Greatness!</p>
             <div class="skills-container">
+                {% for skill in project.skills.all %}
+                    <span class="text-label">{{ skill }}</span>
+                {% endfor %}
                 <span class="text-label">Python</span>
                 <span class="text-label">Django</span>
                 <span class="text-label">Bootstrap</span>
-                <a href="https://github.com/your-project-link" target="_blank" class="cta-button">View Code</a>
+                <span class="text-label">Figma</span>
+
+                <a href="https://github.com/Joseatorres513" target="_blank" class="cta-button">View Code</a>
             </div>
         </div>
+
 
         <!-- Project 2 -->
         <div class="project-card">
@@ -43,7 +67,15 @@
                 <span class="text-label">React</span>
                 <span class="text-label">API</span>
                 <a href="https://github.com/your-project-link" target="_blank" class="cta-button">View Code</a>
+
+                {% if user.is_authenticated %}
+                    <div class="projects-controls center-row">
+                        <a class="btn" href="">Update</a>
+                        <a class="btn" href="{% url 'project_delete' project.pk %}">Delete</a>
+                    </div>
+                {% endif %}
             </div>
+            {% endfor %}
         </div>
     </div>
 </section>
